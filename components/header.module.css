@@ -1,0 +1,28 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    z-index: 25;
+}
+
+.headerContainer button {
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.headerContainer button svg {
+    stroke-width: 1px;
+}
+
+.headerContainer button:hover {
+    background-color: black;
+    color: white;
+}
