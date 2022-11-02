@@ -1,0 +1,42 @@
+
+
+.infoContainer {
+    display: flex;
+    max-width: 100vw;
+}
+
+.leftSide {
+    width: 50%;
+    padding: 2rem;
+}
+
+.rightSide {
+    width: 50%;
+    padding: 2rem;
+}
+
+.leftSide img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .infoContainer {
+        display: block;
+        max-width: 100vw;
+    }
+
+    .leftSide {
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .rightSide {
+        width: 100%;
+        padding: 2rem;
+        padding-top: 0;
+    }
+}
+
+/* .container img {
+    width: 50%;
+} */

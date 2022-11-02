@@ -1,6 +1,5 @@
 .content {
   position: relative;
-  width: 100vw;
   height: calc(1vh*100);
   overflow: hidden;
   content-visibility: auto;
@@ -12,6 +11,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  /* width: 100vw; */
   /* width: 1440px;
   height: 713px;
   top: calc(((1vh * 100) - 713px) / 2);
@@ -22,6 +22,7 @@
 .gridElements {
   display: grid;
   grid-template-columns: repeat(5, 420px);
+  /* width: 100%; */
 }
 
 .gridElements .element {
