@@ -55,7 +55,7 @@
   overflow: auto hidden;
   height: calc(1vh * 100);
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   align-items: center;
   padding: 0px 10vmin;
 }
