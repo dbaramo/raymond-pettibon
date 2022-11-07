@@ -7,11 +7,19 @@
     background-color: black;
     z-index: 100;
     color: white;
-    font-size: 5rem;
+    font-size: 5em;
     text-transform: capitalize;
     display: flex;
     align-items: center;
     font-weight: 500;
     justify-content: center;
     pointer-events: none;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+@media only screen and (max-width: 1024px) {
+    .fullLoader {
+        font-size: 3em;
+    }
 }
