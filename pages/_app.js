@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import "../styles/globals.css";
+import data from "../data/data.json";
 
 let prevRoute = null;
 let currentRoute = null;
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Raymond Pettibon</title>
         <link rel="icon" href="./globe.ico"></link>
+        {data.map((url) => <link rel="preload" as="image" href={url} key={url} />)}
       </Head>
 
       <AnimatePresence exitBeforeEnter={true}>
