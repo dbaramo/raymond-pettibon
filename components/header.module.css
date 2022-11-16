@@ -22,6 +22,7 @@
     border: 1px solid black;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
+    z-index: 100;
 }
 
 .headerContainer button svg {

@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 export default function Info(props) {
   return (
     <>
+    <div className={styles.backButtonDiv}>
       <Link href="/">
         <button className={styles.backButton}>Back</button>
       </Link>
+      </div>
       <div className={styles.infoContainer}>
         <div className={styles.leftSide}>
           <img src="./raymond-info.webp" />

@@ -7,7 +7,7 @@ export default function Header({ view, toggleView }){
     return (
         <header className={styles.headerContainer}>
         <Link href="/info">
-          <button className={styles.infoButton}>info</button>
+          <button  className={styles.infoButton}>info</button>
         </Link>
           <button
             onClick={() => toggleView(!view)}
