@@ -26,6 +26,14 @@ export default function Home({ prevRoute, currentRoute}) {
   const bgColor = useMotionValue("black");
   const x = useMotionValue(0);
   const y = useMotionValue(0);
+
+  useEffect(() => {
+    if(prevRoute !== null){
+      if ("ontouchstart" in document.documentElement){
+        setGridVisible(false)
+      }
+    }
+  }, [])
   
   useEffect(() => {
     async function sequence() {
@@ -65,6 +73,7 @@ export default function Home({ prevRoute, currentRoute}) {
   }, []);
 
   const handleGridParallax = (event, entered) => {
+    if ("ontouchstart" in document.documentElement) return
     if (gridRef.current) {
       let { width, height } = gridRef.current.getBoundingClientRect();
       let displayWidth = window.innerWidth;
